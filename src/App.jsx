@@ -7,6 +7,8 @@ import Services from "./components/Services";
 import Process from "./components/Process";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -25,6 +27,10 @@ export default function App() {
     }, 100);
   };
 
+    const scrollToPortfolio = () => {     // ✅ ADD THIS
+    portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  
   if (showIntro) {
     return <IntroLoader onFinish={() => setShowIntro(false)} />;
   }
@@ -35,10 +41,14 @@ export default function App() {
 
   return (
     <div ref={contentRef}>
-      <Navbar />
+      <Navbar onPortfolioClick={scrollToPortfolio}/>
       <Hero />
       <Services />
       <Process />
+      <div ref={portfolioRef}>
+        <Portfolio />
+      </div>
+      <Testimonials />
       <CTA />
       <Footer />
     </div>
