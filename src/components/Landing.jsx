@@ -410,7 +410,7 @@ export default function Landing({ onExplore,  onPortfolioClick  }) {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button
-                  onClick={onExplore}
+                 onClick={onExplore}
                   className="group px-8 py-4 bg-gray-900 text-white font-bold text-lg rounded-full hover:bg-blue-600 transition-all hover:shadow-2xl hover:shadow-blue-600/50 hover:scale-105"
                 >
                   <span className="flex items-center justify-center gap-2">
@@ -519,7 +519,7 @@ export default function Landing({ onExplore,  onPortfolioClick  }) {
         </svg>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes gradient {
           0%, 100% {
             background-position: 0% 50%;
