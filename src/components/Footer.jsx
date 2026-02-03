@@ -35,8 +35,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold text-white mb-4">Contact</h4>
             <div className="space-y-2 text-gray-400">
-              <p>📧 info@Creovatemedia.com</p>
-              <p>📞 +91 XXXXX XXXXX</p>
+              <p>📧 creovatemedia03@gmail.com</p>
+              <p>📞 +91 7620274330</p>
               <div className="flex gap-3 mt-4">
                 <a href="#" className="bg-gray-800 p-2 rounded hover:bg-blue-600 transition-colors">f</a>
                 <a href="#" className="bg-gray-800 p-2 rounded hover:bg-blue-600 transition-colors">in</a>
